@@ -13,4 +13,4 @@ const newUserTask2 = {id: 4, task: "Go to the gym"}
 userTaskList.push(newUserTask1)
 userTaskList.splice(-2,1, newUserTask2)
 userTaskList.pop()
-console.log(userTaskList[userTaskList.length - 1])
+console.log(`Task id: ${userTaskList[userTaskList.length - 1].id}, ${userTaskList[userTaskList.length - 1].task}`);

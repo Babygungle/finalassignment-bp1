@@ -6,19 +6,19 @@ const inventory = {
 };
 
 // เริ่มเขียนโค้ดตรงนี้
-function updateInventory(item, price, quantity) {
-  if (inventory[item]) {
-    inventory[item].quantity += quantity;
+function updateInventory(name, price, quantity) {
+  if (inventory[name]) {
+    inventory[name].quantity += quantity;
   } else {
-    inventory[item] = { price, quantity };
+    inventory[name] = {price, quantity};
   }
+  
 }
-updateInventory("apple", 35, 200);
+updateInventory("apple", 35, 100);
 updateInventory("orange", 20, 300);
 
 let totalValue = 0;
-for (const item in inventory) {
-  totalValue += inventory[item].price * inventory[item].quantity;
+for (const name in inventory) {
+  totalValue += inventory[name].price * inventory[name].quantity;
 }
-console.log(inventory);
 console.log(`Total inventory value: ${totalValue} baht`);
