@@ -8,3 +8,9 @@ const userTaskList = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+const newUserTask1 = {id: 5, task: "Walk the dog"};
+const newUserTask2 = {id: 4, task: "Go to the gym"}
+userTaskList.push(newUserTask1)
+userTaskList.splice(-2,1, newUserTask2)
+userTaskList.pop()
+console.log(userTaskList[userTaskList.length - 1])

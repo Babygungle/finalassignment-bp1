@@ -2,8 +2,8 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+return products.filter((element) => element.quantity != 0);    
 }
-
 // ตัวอย่างการใช้งาน
 const products = [
   { name: "apple", quantity: 2 },
