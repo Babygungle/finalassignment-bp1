@@ -2,9 +2,9 @@
 
 function calculateShippingCost(orderTotal) {
   // เริ่มเขียนโค้ดที่นี่
-  return orderTotal > 4000
+  return orderTotal > 4000 || orderTotal == 4000
     ? "Shipping is free."
-    : orderTotal > 2000 && orderTotal != 4000
+    : orderTotal > 2000 || orderTotal == 2000 && orderTotal != 4000
     ? "Shipping cost is 250 Baht."
     : "Shipping cost is 500 Baht."
 }
